@@ -106,11 +106,11 @@ gulp.task('watch', function(){
 gulp.task('compile', ['sass','js','image']);
 
 // 2nd template task
-gulp.task('template', ['inject']);
+gulp.task('build', ['inject']);
 
 
 //gulp default
-gulp.task('default', ['compile','template','transfer','watch']);
+gulp.task('default', ['compile','build','transfer','watch']);
 /**********************************************************************/
 
 
